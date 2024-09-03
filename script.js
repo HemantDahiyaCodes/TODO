@@ -4,8 +4,8 @@ const userInput = document.getElementById("addtask");
 const task = document.querySelector(".task");
 const ul = document.querySelector("ul");
 const addTask = () => {
-  if (userInput.value === "" || userInput.value > ul.style.width) {
-    alert("Invalid input or the task is too long");
+  if (userInput.value === "") {
+    alert("Please enter at least one task to continue");
     return;
   }
 
